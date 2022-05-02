@@ -1,0 +1,21 @@
+---
+title: "Untitled"
+author: "Affiong Akpaninyang"
+date: "5/1/2022"
+output: html_document
+---
+```{r}
+DataSet_ <- read.table("~/Downloads/infert.csv")
+
+inf_function <- function(Dataset_, spontaneous=0){
+  if(spontaneous==0){
+    print("unspontaneous")
+  }
+  else {
+    print("spontaneous")
+  }
+}
+```
+
+This functions generates a print statement. It either prints out the word
+spontaneous or unspontaneous.

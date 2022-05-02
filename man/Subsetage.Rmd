@@ -1,0 +1,21 @@
+---
+title: "Untitled"
+author: "Affiong Akpaninyang"
+date: "5/1/2022"
+output: html_document
+---
+```{r}
+subset <- function(age){
+  # create a subset data
+  data("infert") # access to the data
+  names(infert)
+  #subset()
+  summary(infert$age)
+  #create a dataset based on age<25 using dplyr::filter
+  # %>%
+  infert %>% filter(age<25)
+}
+```
+
+This function creates a subset dataset using the age column in the
+original dataset.

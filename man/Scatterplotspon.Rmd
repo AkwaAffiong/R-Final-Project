@@ -1,0 +1,19 @@
+---
+title: "R Markdown Final"
+author: "Affiong Akpaninyang"
+date: "5/1/2022"
+output: html_document
+---
+```{r}
+scatterplotspon <- function(age){
+  infert
+
+  plot(infert$age, infert$spontaneous,
+       main = "Regression for Age on Spontaneous Abortions"
+       , xlab = "Age" , ylab = "Spontaneous Abortions")
+  abline(lm(age ~ induced, data = infert), col = "red")
+}
+```
+
+This function generates a basic scatterplot of age vs spontaneous 
+abortions, it also includes a regression line.

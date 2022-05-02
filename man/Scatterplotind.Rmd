@@ -1,0 +1,21 @@
+---
+title: "Untitled"
+author: "Affiong Akpaninyang"
+date: "5/1/2022"
+output: html_document
+---
+```{r}
+scatterplotind <- function(age){
+  infert
+
+  plot(infert$age, infert$induced,
+       main = "Regression for Age on Induced Abortions"
+       , xlab = "Age" , ylab = "Induced Abortions")
+  abline(lm(age ~ induced, data = infert), col = "blue")
+}
+```
+
+This function generates a basic scatterplot of age vs induced 
+abortions, it also includes a regression line.
+
+
